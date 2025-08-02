@@ -5,9 +5,9 @@ import { CheckCircle, Download, Shield, Clock, Users, FileText, Award, Star } fr
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100 overflow-x-hidden">
       {/* Header */}
-      <header className="container mx-auto px-4 py-6">
+      <header className="container mx-auto px-4 max-w-full py-6">
         <div className="flex items-center justify-center">
           <div className="flex items-center space-x-2">
             <FileText className="h-8 w-8 text-green-600" />
@@ -17,10 +17,10 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="container mx-auto px-4 max-w-full py-12">
+        <div className="max-w-4xl mx-auto text-center break-words">
           <Badge variant="secondary" className="mb-4 bg-green-100 text-green-800">
-            🎯 Guia Completo e Atualizado 2024
+            🎯 Guia Completo e Atualizado 2025
           </Badge>
           
           <h1 className="text-4xl md:text-6xl font-bold text-green-900 mb-6 leading-tight">
@@ -32,16 +32,12 @@ const Index = () => {
             sua Propriedade Rural com o INCRA
           </p>
           
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto break-words">
             Domine todos os processos, evite multas e garanta a regularização da sua propriedade rural 
             de forma rápida e segura com nosso guia definitivo.
           </p>
 
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-12">
-            <div className="flex items-center space-x-2 text-green-600">
-              <CheckCircle className="h-5 w-5" />
-              <span>180+ páginas de conteúdo prático</span>
-            </div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-12 max-w-full overflow-hidden">
             <div className="flex items-center space-x-2 text-green-600">
               <Download className="h-5 w-5" />
               <span>PDF para download imediato</span>
@@ -56,8 +52,8 @@ const Index = () => {
 
       {/* Problema Section */}
       <section className="bg-red-50 py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
+        <div className="container mx-auto px-4 max-w-full">
+          <div className="max-w-3xl mx-auto text-center break-words">
             <h2 className="text-3xl font-bold text-red-800 mb-6">
               ⚠️ Você Sabia Que Pode Estar Perdendo Dinheiro?
             </h2>
@@ -73,13 +69,13 @@ const Index = () => {
 
       {/* Solução Section */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 max-w-full">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-green-800 mb-12">
               🎯 A Solução Completa Está Aqui!
             </h2>
             
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 max-w-full">
               <Card className="border-green-200">
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2 text-green-700">
@@ -88,7 +84,7 @@ const Index = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-3">
+                  <ul className="space-y-3 break-words">
                     <li className="flex items-start space-x-2">
                       <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
                       <span>Como preencher corretamente o CCIR sem erros</span>
@@ -125,10 +121,10 @@ const Index = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-3">
+                  <ul className="space-y-3 break-words">
                     <li className="flex items-start space-x-2">
                       <Star className="h-5 w-5 text-yellow-500 mt-0.5 flex-shrink-0" />
-                      <span>Conteúdo atualizado com as últimas mudanças de 2024</span>
+                      <span>Conteúdo atualizado com as últimas mudanças de 2025</span>
                     </li>
                     <li className="flex items-start space-x-2">
                       <Star className="h-5 w-5 text-yellow-500 mt-0.5 flex-shrink-0" />
@@ -160,7 +156,7 @@ const Index = () => {
 
       {/* Oferta Section */}
       <section className="bg-green-600 text-white py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 max-w-full">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
               🚀 Oferta Especial de Lançamento!
@@ -182,7 +178,7 @@ const Index = () => {
               
               <div className="mt-8 space-y-4">
                 <Button size="lg" className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6">
-                  🔥 QUERO REGULARIZAR MINHA PROPRIEDADE AGORA!
+                  🔥 QUERO REGULARIZAR AGORA!
                 </Button>
                 
                 <div className="flex items-center justify-center space-x-4 text-sm text-muted-foreground">
@@ -203,12 +199,12 @@ const Index = () => {
 
       {/* Depoimentos Section */}
       <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 max-w-full">
           <h2 className="text-3xl font-bold text-center text-green-800 mb-12">
             💬 O Que Nossos Clientes Dizem
           </h2>
           
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-full mx-auto">
             <Card className="border-green-200">
               <CardContent className="p-6">
                 <div className="flex mb-4">
@@ -216,7 +212,7 @@ const Index = () => {
                     <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <p className="text-sm mb-4">
+                <p className="text-sm mb-4 break-words">
                   "Consegui regularizar minha propriedade em apenas 2 meses seguindo o guia. 
                   Economizei mais de R$ 3.000 que gastaria com despachante!"
                 </p>
@@ -233,7 +229,7 @@ const Index = () => {
                     <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <p className="text-sm mb-4">
+                <p className="text-sm mb-4 break-words">
                   "Linguagem clara e objetiva. Finalmente entendi todos os processos do CCIR. 
                   Recomendo para qualquer proprietário rural!"
                 </p>
@@ -250,7 +246,7 @@ const Index = () => {
                     <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <p className="text-sm mb-4">
+                <p className="text-sm mb-4 break-words">
                   "Evitei uma multa de R$ 15.000 porque aprendi sobre os prazos corretos. 
                   O guia se pagou em dobro!"
                 </p>
@@ -265,8 +261,8 @@ const Index = () => {
 
       {/* Garantia Section */}
       <section className="bg-blue-50 py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
+        <div className="container mx-auto px-4 max-w-full">
+          <div className="max-w-3xl mx-auto text-center break-words">
             <div className="flex justify-center mb-6">
               <Shield className="h-16 w-16 text-blue-600" />
             </div>
@@ -277,7 +273,7 @@ const Index = () => {
               Estamos tão confiantes na qualidade do nosso guia que oferecemos 
               <strong> 30 dias de garantia incondicional</strong>.
             </p>
-            <p className="text-blue-600">
+            <p className="text-blue-600 break-words">
               Se por qualquer motivo você não ficar satisfeito, devolvemos 100% do seu dinheiro. 
               Sem perguntas, sem complicações!
             </p>
@@ -287,8 +283,8 @@ const Index = () => {
 
       {/* CTA Final */}
       <section className="bg-green-700 text-white py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
+        <div className="container mx-auto px-4 max-w-full">
+          <div className="max-w-2xl mx-auto text-center break-words">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               ⚡ Não Perca Mais Tempo!
             </h2>
@@ -298,7 +294,7 @@ const Index = () => {
             
             <div className="bg-white text-green-900 p-8 rounded-lg mb-8">
               <div className="text-4xl font-bold mb-4">R$ 49,90</div>
-              <Button size="lg" className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6">
+              <Button size="lg" className="w-full bg-green-600 hover:bg-green-700 text-white text-md py-6">
                 💳 COMPRAR AGORA COM DESCONTO
               </Button>
             </div>
@@ -319,18 +315,13 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="bg-green-900 text-green-100 py-8">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-4 max-w-full text-center break-words">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <FileText className="h-6 w-6" />
             <span className="text-xl font-bold">CCIR Expert</span>
           </div>
           <p className="text-sm">
-            © 2024 CCIR Expert. Todos os direitos reservados.
-          </p>
-          <p className="text-xs mt-2 text-green-300">
-            Este produto é vendido pelo site da Hotmart. A plataforma não faz controle editorial 
-            prévio dos produtos comercializados, tão menos avalia a tecnicidade e experiência 
-            daqueles que os produzem.
+            © 2025 CCIR Expert. Todos os direitos reservados.
           </p>
         </div>
       </footer>
